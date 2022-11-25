@@ -20,9 +20,9 @@ class ChatApplication:
         
         
     def _setup_main_window(self):
-        self.window.title("Chat")
+        self.window.title("Napa ~ College Enquiry Chatbot")
         self.window.resizable(width=False, height=False)
-        self.window.configure(width=470, height=550, bg=BG_COLOR)
+        self.window.configure(width=490, height=550, bg=BG_COLOR)
         
         head_label = Label(self.window, bg=BG_COLOR, fg=TEXT_COlOR, text="Welcome", font=FONT_BOLD, pady=10)
         head_label.place(relwidth=1)
@@ -30,14 +30,14 @@ class ChatApplication:
         line = Label(self.window, width=450, bg=BG_GRAY)
         line.place(relwidth=1, rely=0.07, relheight=0.012)
         
-        self.text_widget= Text(self.window, width=20, heigh=2, bg=BG_COLOR, fg=TEXT_COlOR, font=FONT, padx=5, pady=5)
+        self.text_widget= Text(self.window, width=10, heigh=2, bg=BG_COLOR, fg=TEXT_COlOR, font=FONT, padx=25, pady=20)
         
         self.text_widget.place(relheight=0.745, relwidth=1, rely=0.08)
         self.text_widget.configure(cursor="arrow",state=DISABLED)
         
         # scroll bar
         scrollbar = Scrollbar(self.text_widget)
-        scrollbar.place(relheight=1, relx=0.974)
+        scrollbar.place(relheight=1, relx=1)
         scrollbar.configure(command=self.text_widget.yview)
         
         # bottom label
@@ -45,7 +45,7 @@ class ChatApplication:
         bottom_label.place(relwidth=1, rely=0.825)
         
         # message entry box
-        self.msg_entry = Entry(bottom_label, bg="#2C3E50", fg=TEXT_COlOR, font=FONT )
+        self.msg_entry = Entry(bottom_label, bg="#808080", fg=TEXT_COlOR, font=FONT )
         self.msg_entry.place(relwidth=0.74, relheight=0.06, rely=0.008, relx=0.011)
         self.msg_entry.focus()
         self.msg_entry.bind("<Return>", self._on_enter_pressed)
