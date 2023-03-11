@@ -1,23 +1,33 @@
 {
   "intents": [
     {
-      "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day",
-        "Whats up",
-        "how are ya",
-        "heyy",
-        "whatsup"
-      ],
-      "responses": [
-        "Hello!",
-        "Good to see you again!",
-        "Hi there, how can I help?"
-      ],
+      "tag": "greeting1",
+      "patterns": ["Hi", "Hey", "Hello"],
+      "responses": ["Hello!"],
+      "context_set": ""
+    },
+    {
+      "tag": "greeting2",
+      "patterns": ["How are you?"],
+      "responses": ["I am good. Thanks for asking!"],
+      "context_set": ""
+    },
+    {
+      "tag": "greeting3",
+      "patterns": ["Is anyone there?"],
+      "responses": ["Hi there, how can I help?"],
+      "context_set": ""
+    },
+    {
+      "tag": "greeting4",
+      "patterns": ["Have a nice day", "Have a Good day"],
+      "responses": ["Thanks, Hope to see you again soon!"],
+      "context_set": ""
+    },
+    {
+      "tag": "greeting5",
+      "patterns": ["Oh great", "great", "wow", "nice"],
+      "responses": ["Thanks, hope you liked it! "],
       "context_set": ""
     },
     {
@@ -30,18 +40,12 @@
         "Goodbye",
         "I am Leaving",
         "Bye",
-        "Have a Good day",
         "talk to you later",
         "tyyl",
         "i got to go",
         "gtg"
       ],
-      "responses": [
-        "Sad to see you go :(",
-        "Talk to you later",
-        "Goodbye!",
-        "Come back soon"
-      ],
+      "responses": ["Sad to see you go :(", "Goodbye!", "Come back soon"],
       "context_set": ""
     },
     {
@@ -65,9 +69,9 @@
         "who designed you"
       ],
       "responses": [
-        "Aditya, Sayantan, Pravin and Sanjit [Qaud-Core] developed me in November 2022, for their 7th Semester project",
-        "I was developed by Aditya, Sayantan, Pravin and Sanjit [Qaud-Core]",
-        "4 young boys developed me in PCMT college, Aditya, Sayantan, Pravin and Sanjit [Qaud-Core]"
+        "Tamalika, Sayantan, Gourab and Sanjit developed me in March 2023.",
+        "I was developed by Tamalika, Sayantan, Gourab and Sanjit.",
+        "4 youngsters developed me in PCMT college. Tamalika, Sayantan, Gourab and Sanjit."
       ],
       "context_set": ""
     },
@@ -85,467 +89,21 @@
         "who are you",
         "who is this",
         "what am i chatting to",
-        "who am i taking to",
-        "what are you"
+        "who am i taking to"
       ],
       "responses": [
-        "You can call me Napa.",
-        "I'm Napa",
-        "I'm Napa aka PCMT's Chatbot."
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "hours",
-      "patterns": [
-        "timing of college",
-        "what is college timing",
-        "working days",
-        "when are you guys open",
-        "what are your hours",
-        "hours of operation",
-        "when is the college open",
-        "college timing",
-        "what about college timing",
-        "is college open on saturday",
-        "tell something about college timing",
-        "what is the college  hours",
-        "when should i come to college",
-        "when should i attend college",
-        "what is my college time",
-        "college timing",
-        "timing college"
-      ],
-      "responses": ["College is open 9am-5pm Monday-Friday!"],
-      "context_set": ""
-    },
-    {
-      "tag": "number",
-      "patterns": [
-        "more info",
-        "contact info",
-        "how to contact college",
-        "college telephone number",
-        "college number",
-        "What is your contact no",
-        "Contact number?",
-        "how to call you",
-        "College phone no?",
-        "how can i contact you",
-        "Can i get your phone number",
-        "how can i call you",
-        "phone number",
-        "phone no",
-        "call"
-      ],
-      "responses": [
-        "You can contact at +91 9830800310 / +91-8240585548, Email-frontoffice@pcmt-india.net"
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "course",
-      "patterns": [
-        "list of courses",
-        "list of courses offered",
-        "list of courses offered in pcmt",
-        "list of courses offered in PCMT",
-        "what are the courses offered in your college?",
-        "courses?",
-        "courses offered",
-        "courses offered in pcmt",
-        "courses offered in PCMT",
-        "courses you offer",
-        "branches?",
-        "courses available at pcmt?",
-        "branches available at pcmt?",
-        "what are the courses in pcmt?",
-        "courses available at PCMT?",
-        "branches available at PCMT?",
-        "what are the courses in PCMT?",
-        "what are branches in pcmt?",
-        "what are courses in pcmt?",
-        "branches available in pcmt?",
-        "can you tell me the courses available in pcmt?",
-        "can you tell me the branches available in pcmt?",
-        "courses available at PCMT?",
-        "branches available at PCMT?",
-        "what are the courses in PCMT?",
-        "what are branches in PCMT?",
-        "what are courses in PCMT?",
-        "branches available in PCMT?",
-        "can you tell me the courses available in PCMT?",
-        "can you tell me the branches available in PCMT?",
-        "Civil engineering?",
-        "civil",
-        "it",
-        "IT"
-      ],
-      "responses": [
-        "PCMT offers Computer Science Engineering, Civil Engineering, Electrical and Communication Engineering, Electrical and Electronics Engineering and Mechanical Engineering."
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "fees",
-      "patterns": [
-        "information about fee",
-        "information on fee",
-        "tell me the fee",
-        "college fee",
-        "fee per semester",
-        "what is the fee of each semester",
-        "what is the fees of each year",
-        "what is fee",
-        "what is the fees",
-        "how much is the fees",
-        "fees for first year",
-        "fees",
-        "about the fees",
-        "tell me something about the fees"
-      ],
-      "responses": ["For Fee detail visit https://pcmt-india.net/#"],
-      "context_set": ""
-    },
-    {
-      "tag": "location",
-      "patterns": [
-        "where is the college located",
-        "college is located at",
-        "where is college",
-        "where is college located",
-        "address of college",
-        "how to reach college",
-        "college location",
-        "college address",
-        "wheres the college",
-        "how can I reach college",
-        "whats is the college address",
-        "what is the address of college",
-        "address",
-        "location"
-      ],
-      "responses": [
-        "Pailan College Of Management And Technology, Bengal Pailan Park, Sector 1, Phase 1, Amgachia Road, Pailan, Joka, Kolkata, West Bengal 700104 "
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "hostel",
-      "patterns": [
-        "hostel facility",
-        "hostel servive",
-        "hostel location",
-        "hostel address",
-        "hostel facilities",
-        "hostel fees",
-        "Does college provide hostel",
-        "Is there any hostel",
-        "Where is hostel",
-        "do you have hostel",
-        "do you guys have hostel",
-        "hostel",
-        "hostel capacity",
-        "what is the hostel fee",
-        "how to get in hostel",
-        "what is the hostel address",
-        "how far is hostel from college",
-        "hostel college distance",
-        "where is the hostel",
-        "how big is the hostel",
-        "distance between college and hostel",
-        "distance between hostel and college"
-      ],
-      "responses": [
-        "Pailan College Of Management And Technology does provide hostel facility"
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "event",
-      "patterns": [
-        "events organised",
-        "list of events",
-        "list of events organised in college",
-        "list of events conducted in college",
-        "What events are conducted in college",
-        "Are there any event held at college",
-        "Events?",
-        "functions",
-        "what are the events",
-        "tell me about events",
-        "what about events"
-      ],
-      "responses": [
-        "Induction Program, Freshers, Tech Fests, Sports Week, Farewell, Conference and various other event conducted in the college. For more information you can visit college Website https://pcmt-india.net/events/ "
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "document",
-      "patterns": [
-        "document to bring",
-        "documents needed for admision",
-        "documents needed at the time of admission",
-        "documents needed during admission",
-        "documents required for admision",
-        "documents required at the time of admission",
-        "documents required during admission",
-        "What document are required for admission",
-        "Which document to bring for admission",
-        "documents",
-        "what documents do i need",
-        "what documents do I need for admission",
-        "documents needed"
-      ],
-      "responses": [
-        "To know more about document required visit https://pcmt-india.net/admission-process/"
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "floors",
-      "patterns": [
-        "size of campus",
-        "building size",
-        "How many floors does college have",
-        "floors in college",
-        "floors in college",
-        "how tall is pcmt college building",
-        "how tall is PCMT college building",
-        "floors"
-      ],
-      "responses": ["PCMT has total 4 floors "],
-      "context_set": ""
-    },
-    {
-      "tag": "syllabus",
-      "patterns": [
-        "Syllabus for CSE",
-        "what is the Computer Science Engineering syllabus",
-        "syllabus",
-        "timetable",
-        "what is CSE syllabus",
-        "syllabus",
-        "What is next lecture"
-      ],
-      "responses": [
-        "To know about  syllabus and timetable visit https://pcmt-india.net/computer-science/"
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "library",
-      "patterns": [
-        "is there any library",
-        "library facility",
-        "library facilities",
-        "do you have library",
-        "does the college have library facility",
-        "college library",
-        "where can i get books",
-        "book facility",
-        "Where is library",
-        "Library",
-        "Tell me about library",
-        "how many libraries"
-      ],
-      "responses": [
-        "There is one library on second floor. Have a look https://pcmt-india.net/library/"
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "infrastructure",
-      "patterns": [
-        "how is college infrastructure",
-        "infrastructure",
-        "college infrastructure"
-      ],
-      "responses": [
-        "Pailan College Of Management And Technology has Excellent Infrastructure. Campus is clean. Good Computer Labs With Good Speed of Internet connection"
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "canteen",
-      "patterns": [
-        "food facilities",
-        "canteen facilities",
-        "canteen facility",
-        "is there any canteen",
-        "Is there a cafetaria in college",
-        "Does college have canteen",
-        "Where is canteen",
-        "where is cafetaria",
-        "canteen",
-        "Cafetaria"
-      ],
-      "responses": ["PCMT has canteen with variety of food available"],
-      "context_set": ""
-    },
-    {
-      "tag": "menu",
-      "patterns": [
-        "food menu",
-        "food in canteen",
-        "Whats there on menu",
-        "what is available in college canteen",
-        "what foods can we get in college canteen"
-      ],
-      "responses": [
-        "we serve Bread Pakoda, Chowmin, Thaali, Samosa, Dal Rice and many more on menu"
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "placement",
-      "patterns": [
-        "What is college placement",
-        "Which companies visit in college",
-        "What is average package",
-        "companies visit",
-        "package",
-        "placement",
-        "recruitment",
-        "companies"
-      ],
-      "responses": [
-        "To know about placement visit http://pcmt-india.net/placement_record.html"
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "ithod",
-      "patterns": [
-        "Who is CSE HOD",
-        "Where is CSE HOD",
-        "CSE hod",
-        "name of CSE hod",
-        "Who is cse HOD",
-        "Where is cse HOD",
-        "cse hod",
-        "name of cse hod"
-      ],
-      "responses": [
-        "Prof. Parag Chatterjee is CSE HOD who is available on the 1st floor. For detailed faculty list, visit https://pcmt-india.net/faculty-staff/"
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "principal",
-      "patterns": [
-        "what is the name of principal",
-        "whatv is the principal name",
-        "principal name",
-        "Who is college principal",
-        "Where is principal's office",
-        "principal",
-        "name of principal"
-      ],
-      "responses": [
-        "Dr. Arindam Mondal is the college principal who is available on 2nd floor"
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "sem",
-      "patterns": [
-        "exam dates",
-        "exam schedule",
-        "When is semester exam",
-        "Semester exam timetable",
-        "sem",
-        "semester",
-        "exam",
-        "when is exam",
-        "exam timetable",
-        "exam dates",
-        "when is semester"
-      ],
-      "responses": ["Here is the Academic Calendar  https://pcmt-india.net/#"],
-      "context_set": ""
-    },
-    {
-      "tag": "admission",
-      "patterns": [
-        "what is the process of admission",
-        "what is the admission process",
-        "How to take admission in your college",
-        "What is the process for admission",
-        "admission",
-        "admission process"
-      ],
-      "responses": [
-        "To know about placement visit https://pcmt-india.net/admission-process/"
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "facilities",
-      "patterns": [
-        "What facilities college provide",
-        "College facility",
-        "What are college facilities",
-        "facilities",
-        "facilities provided"
-      ],
-      "responses": [
-        "PCMT provides fully AC Lab with Internet Connection, Smart Classroom, Auditorium, Library, Canteen"
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "college intake",
-      "patterns": [
-        "max number of students",
-        "number of seats per branch",
-        "number of seats in each branch",
-        "maximum number of seats",
-        "maximum students intake",
-        "What is college intake",
-        "how many stundent are taken in each branch",
-        "seat allotment",
-        "seats"
-      ],
-      "responses": ["For CSE, CE, ECE, EEE 60 per branch "],
-      "context_set": ""
-    },
-    {
-      "tag": "uniform",
-      "patterns": [
-        "college dress code",
-        "college dresscode",
-        "what is the uniform",
-        "can we wear casuals",
-        "Does college have an uniform",
-        "Is there any uniform",
-        "uniform",
-        "what about uniform",
-        "do we have to wear uniform"
-      ],
-      "responses": ["PCMT has uniform"],
-      "context_set": ""
-    },
-    {
-      "tag": "committee",
-      "patterns": [
-        "what are the different committe in college",
-        "different committee in college",
-        "Are there any committee in college",
-        "Give me committee details",
-        "committee",
-        "how many committee are there in college"
-      ],
-      "responses": [
-        "There are various committe in college like Coding Club, Nature Club, Photography Club, etc"
+        "You can call me Chef Ji.",
+        "I'm Chef Ji",
+        "I'm Chef Ji aka Hunger Bot."
       ],
       "context_set": ""
     },
     {
       "tag": "random",
       "patterns": ["I love you", "Will you marry me", "Do you love me"],
-      "responses": ["I am not program for this please ask appropriate query"],
+      "responses": [
+        "I am not programmed for this please ask appropriate query"
+      ],
       "context_set": ""
     },
     {
@@ -568,24 +126,7 @@
       "context_set": ""
     },
     {
-      "tag": "vacation",
-      "patterns": [
-        "holidays",
-        "when will semester starts",
-        "when will semester end",
-        "when is the holidays",
-        "list of holidays",
-        "about vacations",
-        "about holidays",
-        "When is vacation",
-        "When is holidays",
-        "how long will be the vacation"
-      ],
-      "responses": ["Please refer academic calendar https://pcmt-india.net"],
-      "context_set": ""
-    },
-    {
-      "tag": "salutaion",
+      "tag": "salutaion1",
       "patterns": [
         "okk",
         "okie",
@@ -598,11 +139,23 @@
         "Thanks",
         "k",
         "ok",
-        "okay"
+        "okay",
+        "Thankyou",
+        "Thanku",
+        ""
       ],
       "responses": [
-        "I am glad I helped you",
-        "welcome, anything else i can assist you with?"
+        "I am glad that I helped you",
+        "Welcome, anything else I can assist you with?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "salutaion2",
+      "patterns": ["ohh sorry", "sorry", "my bad"],
+      "responses": [
+        "It's ok! I'm here to help you.",
+        "Don't worry, I'm here to help you."
       ],
       "context_set": ""
     },
@@ -617,67 +170,520 @@
         "why i should use you"
       ],
       "responses": [
-        "I can answer to low-intermediate questions regarding college",
-        "You can ask me questions regarding college, and i will try to answer them"
+        "I can answer what dishes can be made based on the ingredients available in the kitchen and also What are the ingredients required to prepare a dish."
       ],
       "context_set": ""
     },
     {
-      "tag": "ragging",
+      "tag": "chai",
       "patterns": [
-        "ragging",
-        "is ragging practice active in college",
-        "does college have any antiragging facility",
-        "is there any ragging cases",
-        "is ragging done here",
-        "ragging juniors",
-        "ragging history",
-        "ragging incidents"
+        "milk tea leaf",
+        "water tea leaf",
+        "milk sugar tea leaf",
+        "water sugar tea leaf",
+        "milk ginger tea leaf",
+        "water ginger tea leaf",
+        "water ginger tea leaf sugar",
+        "milk ginger tea leaf sugar"
+      ],
+      "responses": ["You can make Tea.."]
+    },
+    {
+      "tag": "chai-need ingredients",
+      "patterns": [
+        "milk ",
+        "water ",
+        "milk sugar ",
+        "water sugar ",
+        "milk ginger ",
+        "water ginger ",
+        "water ginger  sugar",
+        "milk ginger  sugar"
+      ],
+      "responses": ["You can make Tea by adding Tea Leaf to it"]
+    },
+
+    {
+      "tag": "Dish 2",
+      "patterns": [
+        "Bhetki fish, yoghurt, chopped onion, green chillies, ginger garlic paste, turmeric powder, cumin powder, coriander powder, red chilli powder, garam masala, black pepper, bay leaf, cardamom, salt, cloves, mustard oil"
+      ],
+      "responses": ["you can make Doi Bhetki"]
+    },
+    {
+      "tag": "Dish-2 need ingredients",
+      "patterns": [
+        "yoghurt, chopped onion, green chillies, ginger garlic paste, turmeric powder, cumin powder, coriander powder, red chilli powder, garam masala, black pepper, bay leaf, cardamom, salt, cloves, mustard oil"
+      ],
+      "responses": ["you can make Doi Bhetki by adding Bhetki fish into it"]
+    },
+    {
+      "tag": "Dish-2 reverse",
+      "patterns": [
+        "I want to make Doi Bhetki",
+        "What are the ingredients needed to make Doi Bhetki?",
+        "What are the ingredients needed to prepare Doi Bhetki?",
+        "I want to prepare Doi Bhetki"
       ],
       "responses": [
-        "We are Proud to tell you that our college provides ragging free environment, and we have strict rules against ragging"
+        "Great choice. For this you'll require Bhetki fish, yoghurt, chopped onion, green chillies, ginger garlic paste, turmeric powder, cumin powder, coriander powder, red chilli powder, garam masala, black pepper, bay leaf, cardamom, salt, cloves, mustard oil"
       ]
     },
     {
-      "tag": "hod",
-      "patterns": ["hod", "hod name", "who is the hod"],
+      "tag": "Dish 3",
+      "patterns": [
+        "Hilsa fish, mustard seeds, green chillies, coconut, yoghurt, salt, sugar, turmeric powder, mustard oil"
+      ],
+      "responses": ["you can make Ilish bhapa"]
+    },
+    {
+      "tag": "Dish-3 need ingredients",
+      "patterns": [
+        "mustard seeds, green chillies, coconut, yoghurt, salt, sugar, turmeric powder, mustard oil"
+      ],
+      "responses": ["you can make Ilish Bhapa by adding Hilsh Fish into it"]
+    },
+    {
+      "tag": "Dish-3 reverse",
+      "patterns": [
+        "I want to make Ilish Bhapa",
+        "What are the ingredients needed to make Ilish Bhapa?",
+        "What are the ingredients needed to prepare Ilish Bhapa?",
+        "I want to prepare Ilish Bhapa"
+      ],
       "responses": [
-        "HODs differ for each branch, please be more specific like: (HOD CSE)"
+        "That's one of my favourite. To make this you must have Hilsa fish, mustard seeds, green chillies, coconut, yoghurt, salt, sugar, turmeric powder, mustard oil"
       ]
     },
     {
-      "tag": "transport",
+      "tag": "Dish 4",
       "patterns": [
-        "transport",
-        "dtc bus route",
-        "mode of transportation",
-        "how to get to college",
-        "buses for college",
-        "college buses",
-        "bus routes",
-        "list of buses for travelling",
-        "does 12C goes to college",
-        "does 12C goes to pailan",
-        "does 12c goes to college",
-        "does 12c goes to pailan",
-        "does 12C goes to college",
-        "does 12C goes to pailan haat"
+        "Bhetki fish, lemon juice, coconut, yellow mustard, black mustard, green chillies, salt, banana leaves, mustard oil"
       ],
-      "responses": ["12C, 12C/1A, 12C/1B, SD5, 75, 83: Pailan Haat"]
+      "responses": ["you can make Bhetki Paturi"]
     },
     {
-      "tag": "metro",
+      "tag": "Dish 4",
       "patterns": [
-        "nearest metro station",
-        "what is the nearest metro station",
-        "which metro station is near",
-        "closest metro station",
-        "which metro station is closest",
-        "nearby metro stations",
-        "metro",
-        "metro station nearby"
+        "lemon juice, coconut, yellow mustard, black mustard, green chillies, salt, banana leaves, mustard oil"
       ],
-      "responses": ["Joka metro station"]
+      "responses": ["you can make Bhetki paturi by adding Bhetki Fish into it"]
+    },
+    {
+      "tag": "Dish-4 reverse",
+      "patterns": [
+        "I want to make Bhetki Paturi",
+        "What are the ingredients needed to make Bhetki Paturi?",
+        "What are the ingredients needed to prepare Bhetki Paturi?",
+        "I want to prepare Bhetki Paturi"
+      ],
+      "responses": [
+        "Great choice. The ingredients that you'll require are Bhetki fish, lemon juice, coconut, yellow mustard, black mustard, green chillies, salt, banana leaves, mustard oil"
+      ]
+    },
+    {
+      "tag": "Dish 5",
+      "patterns": [
+        "Katla fish, mustard oil, salt, turmeric and chilli powder, sugar, curd, cumin seeds, cloves, cardamoms, cinnamon, green chilli paste, ginger paste, cashews"
+      ],
+      "responses": ["you can make Doi Katla"]
+    },
+    {
+      "tag": "Dish 5",
+      "patterns": [
+        "mustard oil, salt, turmeric and chilli powder, sugar, curd, cumin seeds, cloves, cardamoms, cinnamon, green chilli paste, ginger paste, cashews"
+      ],
+      "responses": ["you can make Doi Katla by adding Katla Fish into it"]
+    },
+    {
+      "tag": "Dish-5 reverse",
+      "patterns": [
+        "I want to make Doi Katla",
+        "What are the ingredients needed to make Doi Katla?",
+        "What are the ingredients needed to prepare Doi Katla?",
+        "I want to prepare Doi Katla"
+      ],
+      "responses": [
+        "Great choice. For this you must require Katla fish, mustard oil, salt, turmeric and chilli powder, sugar, curd, cumin seeds, cloves, cardamoms, cinnamon, green chilli paste, ginger paste, cashews"
+      ]
+    },
+    {
+      "tag": "recipe 1",
+      "patterns": [
+        "mustard oil, nigella seeds, dried red chillies, onions, potatoes, poppy seeds, green chillies,salt, sugar "
+      ],
+      "responses": ["You can make aloo posto by using these ingredients"]
+    },
+    {
+      "tag": "recipe-1 need ingredients",
+      "patterns": [
+        "mustard oil, dried red chillies, onions, poppy seeds, green chillies,salt, sugar "
+      ],
+      "responses": ["You can make aloo posto by adding Aloo and Posto into it"]
+    },
+    {
+      "tag": "recipe-1 reverse",
+      "patterns": [
+        "I want to make Aloo Posto",
+        "What are the ingredients needed to make Aloo Posto?",
+        "What are the ingredients needed to prepare Aloo Posto?",
+        "I want to prepare Aloo Posto"
+      ],
+      "responses": [
+        "Great choice. For this you must require mustard oil, dried red chillies, onions, poppy seeds, green chillies,salt, sugar"
+      ]
+    },
+    {
+      "tag": "recipe 2",
+      "patterns": [
+        "gram flour, rice flour, salt, kashmiri red chilli powder, water, brinjal , salt , sugar , mustard oil"
+      ],
+      "responses": ["You can make Beguni by using these ingredients"]
+    },
+    {
+      "tag": "recipe-2 need ingredients",
+      "patterns": [
+        "gram flour, rice flour, salt, kashmiri red chilli powder, water, salt , sugar , mustard oil"
+      ],
+      "responses": ["You can make Beguni by adding Brinjal into it"]
+    },
+    {
+      "tag": "recipe-2 reverse",
+      "patterns": [
+        "I want to make Beguni",
+        "What are the ingredients needed to make Beguni?",
+        "What are the ingredients needed to prepare Beguni?",
+        "I want to prepare Beguni"
+      ],
+      "responses": [
+        "Great choice. For this you must require gram flour, rice flour, salt, kashmiri red chilli powder, water, brinjal , salt , sugar , mustard oil"
+      ]
+    },
+    {
+      "tag": "recipe 3",
+      "patterns": [
+        "all-purpose flour, salt, sugar, vegetable oil, hot water, vegetable oil for deep-frying"
+      ],
+      "responses": ["You can make luchi by using these ingredients"]
+    },
+    {
+      "tag": "recipe-3 need ingredients",
+      "patterns": [
+        "salt, sugar, vegetable oil, hot water, vegetable oil for deep-frying"
+      ],
+      "responses": ["You can make luchi by adding all purpose flour into it"]
+    },
+    {
+      "tag": "recipe-3 reverse",
+      "patterns": [
+        "I want to make Luchi",
+        "What are the ingredients needed to make Luchi?",
+        "What are the ingredients needed to prepare Luchi?",
+        "I want to prepare Luchi"
+      ],
+      "responses": [
+        "Great choice. For this you must require all-purpose flour, salt, sugar, vegetable oil, hot water, vegetable oil for deep-frying"
+      ]
+    },
+    {
+      "tag": "recipe 4",
+      "patterns": [
+        "sugar, white vinegar, ripe mangoes , onion, golden raisins , ginger , mustard seeds, red pepper flakes"
+      ],
+      "responses": ["You can make mango chutney by using these ingredients"]
+    },
+    {
+      "tag": "recipe-4 need ingredients",
+      "patterns": [
+        "sugar, white vinegar, onion, golden raisins , ginger , mustard seeds, red pepper flakes"
+      ],
+      "responses": ["You can make mango chutney by adding Ripe Mango into it"]
+    },
+    {
+      "tag": "recipe-4 reverse",
+      "patterns": [
+        "I want to make Mango Chutney",
+        "What are the ingredients needed to make Mango Chutney?",
+        "What are the ingredients needed to prepare Mango Chutney?",
+        "I want to prepare Mango Chutney"
+      ],
+      "responses": [
+        "Great choice. For this you must require sugar, white vinegar, ripe mangoes , onion, golden raisins , ginger , mustard seeds, red pepper flakes"
+      ]
+    },
+
+    {
+      "tag": "dish",
+      "patterns": [
+        "I want to make a dish",
+        "I wanna make a dish",
+        "I want to prepare a dish",
+        "I wanna prepare a dish",
+        "I want to make something",
+        "I want to prepare something"
+      ],
+      "responses": [
+        "Ohh that's great! What are the ingredients available to you?"
+      ]
+    },
+    {
+      "tag": "dish 1",
+      "patterns": [
+        "rice, daal, mustard powder, water, chilli, vegetables, salt, sugar"
+      ],
+      "responses": ["You can make Khichdi by using that ingredients."]
+    },
+    {
+      "tag": "dish-1 need ingredients",
+      "patterns": ["mustard powder, water, chilli, vegetables, salt, sugar"],
+      "responses": ["You can make Khichdi by adding Rice and Daal into it"]
+    },
+    {
+      "tag": "dish-1 reverse",
+      "patterns": [
+        "What are the ingredients needed to make khichdi?",
+        "I want to make Khichdi",
+        "What are the ingredients needed to prepare khichdi?",
+        "I want to prepare Khichdi"
+      ],
+      "responses": [
+        "Great choice. For this you must require rice, daal, mustard powder, water, chilli, vegetables, salt, sugar"
+      ]
+    },
+    {
+      "tag": "dish 2",
+      "patterns": ["rice, milk, salt, elaichi, cashew, raisin, sugar"],
+      "responses": ["You can make Payesh easily"]
+    },
+    {
+      "tag": "dish-2 need ingredients",
+      "patterns": ["milk, salt, elaichi, cashew, raisin, sugar"],
+      "responses": ["You can make Payesh by adding Rice into it"]
+    },
+    {
+      "tag": "dish-2 reverse",
+      "patterns": [
+        "What are the ingredients needed to prepare payesh?",
+        "I want to prepare payesh",
+        "What are the ingredients needed to make payesh?",
+        "I want to make payesh"
+      ],
+      "responses": [
+        "Great choice. For this you must require rice, milk, salt, elaichi, cashew, raisin, sugar"
+      ]
+    },
+    {
+      "tag": "dish 3",
+      "patterns": [
+        "prawn, salt, mustuard powder, chilli, cashew, raisin, sugar, coconut powder"
+      ],
+      "responses": ["You can make Chingri(Prawn) Malaikari"]
+    },
+    {
+      "tag": "dish-3 need ingredients",
+      "patterns": [
+        "salt, mustuard powder, chilli, cashew, raisin, sugar, coconut powder"
+      ],
+      "responses": [
+        "You can make Chingri(Prawn) Malaikari by adding Prawn into it"
+      ]
+    },
+    {
+      "tag": "dish-3 reverse",
+      "patterns": [
+        "What are the ingredients needed to prepare chingri malaikari?",
+        "I want to make chingri malaikari",
+        "What are the ingredients needed to make chingri malaikari?",
+        "I want to prepare chingri malaikari"
+      ],
+      "responses": [
+        "Great choice. For this you must require prawn, salt, mustuard powder, chilli, cashew, raisin, sugar, coconut powder"
+      ]
+    },
+    {
+      "tag": "dish 4",
+      "patterns": [
+        "chicken, salt, mustuard powder, chilli powder, jeera powder, coriender powder, water, onion, ginger & garlic paste, ground spices, vegitable oil"
+      ],
+      "responses": ["You can make Chicken Curry"]
+    },
+    {
+      "tag": "dish-4 need ingredients",
+      "patterns": [
+        "salt, mustuard powder, chilli powder, jeera powder, coriender powder, water, onion, ginger & garlic paste, ground spices, vegitable oil"
+      ],
+      "responses": ["You can make Chicken Curry by adding Chicken into it"]
+    },
+    {
+      "tag": "dish-4 reverse",
+      "patterns": [
+        "What are the ingredients needed to prepare chicken curry?",
+        "I want to make chicken curry",
+        "What are the ingredients needed to make chicken Curry?",
+        "I want to prepare chicken curry"
+      ],
+      "responses": [
+        "You need these ingredients to prepare chicken curry. Chicken, salt, mustuard powder, chilli powder, jeera powder, coriender powder, water, onion, ginger & garlic paste, ground spices, vegitable oil"
+      ]
+    },
+    {
+      "tag": "dish 5",
+      "patterns": [
+        "mutton, salt, mustuard powder, chilli powder, jeera powder, coriender powder, curd, water, onion, ginger & garlic paste, ground spices, vegitable oil"
+      ],
+      "responses": ["You can make Mutton Curry"]
+    },
+    {
+      "tag": "dish-5 need ingredients",
+      "patterns": [
+        "salt, mustuard powder, chilli powder, jeera powder, coriender powder, curd, water, onion, ginger & garlic paste, ground spices, vegitable oil"
+      ],
+      "responses": ["You can make Mutton Curry by adding Mutton into it"]
+    },
+    {
+      "tag": "dish-5 reverse",
+      "patterns": [
+        "What are the ingredients needed to prepare mutton curry?",
+        "I want to prepare mutton curry",
+        "What are the ingredients needed to make mutton curry?",
+        "I want to make mutton curry"
+      ],
+      "responses": [
+        "You need these ingredients to prepare mutton curry. Mutton, salt, mustuard powder, chilli powder, jeera powder, coriender powder, curd, water, onion, ginger & garlic paste, ground spices, vegitable oil"
+      ]
+    },
+    {
+      "tag": "ingredients-6",
+      "patterns": ["rice, water"],
+      "responses": [
+        "You can make only Plain Rice. Do have any other ingredients?"
+      ]
+    },
+    {
+      "tag": "ingredients-7",
+      "patterns": [
+        "chicken",
+        "water",
+        "rice",
+        "prawn",
+        "potato",
+        "mutton",
+        "daal",
+        "vegitables",
+        "salt",
+        "sugar",
+        "spices",
+        "ginger",
+        "garlic",
+        "vegitable oil"
+      ],
+      "responses": [
+        "Sorry, you can't make any dish by only one ingredient. You need others ingredients also."
+      ]
+    },
+    {
+      "tag": "snacks",
+      "patterns": [
+        "Name few snacks which I can make in five minutes",
+        "snacks which I can make in five minutes",
+        "fastest bengali snacks",
+        "five minutes snacks",
+        "snacks that can be made in 5 minutes",
+        "snacks that can be prepared in 5 minutes",
+        "quick bengali snacks",
+        "what snacks can be made in 5 minutes",
+        "what snacks can be prepared in 5 minutes"
+      ],
+      "responses": [
+        "You can make phuchka, jhalmuri, masalamuri, behuni, chop"
+      ]
+    },
+    {
+      "tag": "onion",
+      "patterns": [
+        "Is it okay to add onion in a veg dish?",
+        "Is it okay to add onion in a veg dish",
+        "Can we add onion in a veg dish",
+        "Can a veg dish be prepared by adding onion?",
+        "Can we make a veg dish by adding onion",
+        "Are onions required in a veg dish",
+        "Can we put onions in a veg dish",
+        "Can we add onions in a veg dish"
+      ],
+      "responses": [
+        "No. It's better not to add onions in veg dish"
+      ]
+    },
+    {
+      "tag": "non fire",
+      "patterns": [
+        "Tell me about some non fire cooking dishes",
+        "Suggest some non fire cooking dishes",
+        "Give some non fire cooking dishes",
+        "Name some dishes where fire is not required",
+        "Name some dishes where fire is not required to make it",
+        "Mention some non fire cooking dishes",
+        "What are the dishes that does not involve fire",
+        "Name some dishes that does not involve fire",
+        "What dishes can I make without using fire"
+      ],
+      "responses": [
+        "You can make phuchka, sandwish, ice cream"
+      ]
+    },
+    {
+      "tag": "bengali sweets",
+      "patterns": [
+        "What are some famous homemade bengali sweet dishes",
+        "Suggest some famous homemade bengali sweet dishes",
+        "Give some famous bengali sweet dishes",
+        "Name some homemade bengali sweet dishes",
+        "Name some famous homemade bengali sweet dishes",
+        "Mention some homemade bengali sweet dishes",
+        "Name some bengali sweet dishes that are made on occasions",
+        "Name some homemade bengali sweet dishes that are prepared on festivals",
+        "What homemade bengali sweet dishes are made on occasions",
+        "What homemade bengali sweet dishes can I make occasionally",
+        "Best homemade bengali sweet dishes",
+        "Homemade bengali sweet dishes to make occasionally",
+        "Homemade bengali sweet dishes"
+      ],
+      "responses": [
+        "Well there are some really mouth watering sweet dishes that you can make like pithe, malpua, naru, payesh"
+      ]
+    },
+    {
+      "tag": "spices",
+      "patterns": [
+        "What are the most used spices in bengali dishes",
+        "Suggest some most used spices in bengali dishes",
+        "Give some most used spices in bengali dishes",
+        "Name some most used spices in bengali dishes",
+        "Mention some most used spices in bengali dishes",
+        "Name some most used spices in bengali dishes",
+        "What are some most used spices in bengali dishes"  
+      ],
+      "responses": [
+        "Most used bengali spices include mustard powder, red chilli powder, kashmiri red chilli powder, coriander powder, jeera powder, paanch phoron, bay leaves, black pepper powder, garam masala"
+      ]
+    },
+    {
+      "tag": "diet food",
+      "patterns": [
+        "What is the best kind of food after workout",
+        "Suggest some diet food",
+        "Suggest some healthy food",
+        "Give some food which is necessary for our health",
+        "Name some healthy food",
+        "Name some food that is healthy",
+        "Mention some diet food",
+        "Recommend some healthy diet food",
+        "What are some healthy diet food",
+        "Best healthy diet food"
+      ],
+      "responses": [
+        "You can have Fruits, fruit juice, chickpea, boiled egg, salad, yoghurt, dry fruits and many such food with less calories"
+      ]
     }
   ]
 }
